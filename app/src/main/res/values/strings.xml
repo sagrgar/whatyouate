@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">WhatYouAte</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="username_hint">username</string>
+    <string name="password_hint">password</string>
+    <string name="log_in_button">Log In</string>
+    <string name="sign_up"><u>Register</u></string>
+    <string name="register">Register</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+
+    <string-array name="meal_type">
+
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+        <item>Snacks</item>
+    </string-array>
+</resources>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfile">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="175dp"
+        android:background="#47AA67"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/profile_iv2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/emptypp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="changePicture"/>
+
+    <EditText
+        android:id="@+id/name_et"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimary"
+        android:hint="Enter name here"
+        android:textColor="@android:color/white"
+        android:padding="7dp"
+        android:inputType="textCapWords"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_iv2" />
+
+    <TextView
+        android:id="@+id/weight_tv2"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
+        android:text="Weight"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/weight_et"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_iv2" />
+
+    <TextView
+        android:id="@+id/height_tv2"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Height"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/height_et"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weight_tv2" />
+
+    <TextView
+        android:id="@+id/goal_tv2"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Goal"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/goal_et"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/height_tv2" />
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="Done"
+        android:text="Done"
+        android:background="@drawable/custom_save"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/weight_et"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/colorPrimary"
+        android:ems="10"
+        android:hint="Enter weigth here (in kg)"
+        android:textColor="@android:color/white"
+        android:inputType="number"
+        android:padding="7dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/weight_tv2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/weight_tv2" />
+
+    <EditText
+        android:id="@+id/height_et"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/colorPrimary"
+        android:ems="10"
+        android:hint="Enter height here (in cm)"
+        android:textColor="@android:color/white"
+        android:inputType="number"
+        android:padding="7dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/height_tv2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/height_tv2" />
+
+    <EditText
+        android:id="@+id/goal_et"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/colorPrimary"
+        android:ems="10"
+        android:padding="7dp"
+        android:textColor="@android:color/white"
+        android:hint="Enter goal here"
+        android:inputType="textPersonName|textEmailAddress|textCapWords"
+        app:layout_constraintBaseline_toBaselineOf="@+id/goal_tv2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/goal_tv2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
